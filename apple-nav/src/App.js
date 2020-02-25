@@ -1,19 +1,20 @@
 import React, { Fragment, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import data from './data/data';
+import Navbar from './components/Navbar';
+import Subnav from './components/Subnav';
 
 function App() {
-  const [links] = useState(data);
+  const [links] = useState(data.links);
 
   return (
-    <Switch>
-      <Route exact path='/'>
-        home
+    <Fragment>
+      <Navbar links={links} />
+
+      <Route path='/:category'>
+        <Subnav links={links} />
       </Route>
-      <Route exact path='/:category'>
-        iphone
-      </Route>
-    </Switch>
+    </Fragment>
   );
 }
 

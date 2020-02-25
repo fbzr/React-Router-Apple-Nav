@@ -1,4 +1,4 @@
-export default links = [
+const links = [
     { 
         title: 'Mac',
         value: 'mac',
@@ -50,3 +50,5 @@ export default links = [
         ]
     }
 ];
+
+export default { links };
