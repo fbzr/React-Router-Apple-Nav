@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
+  const category = [
+    'Mac',
+    'iPad',
+    'iPhone',
+    'Watch',
+    'TV',
+    'Music',
+    'Support'
+  ];
+
   return (
-    <div>
-      App
-    </div>
+    <Switch>
+      <Route exact path='/'>
+        home
+      </Route>
+      <Route exact path='/:category'>
+        iphone
+      </Route>
+    </Switch>
   );
 }
 
