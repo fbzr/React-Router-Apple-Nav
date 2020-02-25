@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import data from './data/data';
 import Navbar from './components/Navbar';
 import Subnav from './components/Subnav';
