@@ -1,16 +1,9 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import data from './data/data';
 
 function App() {
-  const category = [
-    'Mac',
-    'iPad',
-    'iPhone',
-    'Watch',
-    'TV',
-    'Music',
-    'Support'
-  ];
+  const [links] = useState(data);
 
   return (
     <Switch>
