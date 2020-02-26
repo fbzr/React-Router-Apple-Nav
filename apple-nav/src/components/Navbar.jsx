@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Navbar = ({ links }) => {
     return (
-        <div>
-            {links.map((link, i) => 
-                <Link to={`/${link.value}`}>
+        <div className='navbar'>
+            {links.map(link => 
+                <Link key={link.value} to={`/${link.value}`}>
                     {link.title}
                 </Link>
             )}

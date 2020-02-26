@@ -1,0 +1,11 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.subnav {
+    display: flex;       
+    justify-content: space-evenly;
+    width: 100%;
+}
